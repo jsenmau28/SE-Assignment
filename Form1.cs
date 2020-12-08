@@ -10,14 +10,16 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using System.Windows.Controls;
 
+
 namespace Database_Tesing
 {
 
     public partial class Form1 : Form
     {
-        int cLeft = 0;
+        int cLeft = 2;
+        int number = 1;
         List<string> txtBoxName = new List<string>();
-        int countTxtBox = 0;
+        int countTxtBox = 1;
         
 
         public Form1()
@@ -46,8 +48,9 @@ namespace Database_Tesing
             this.Controls.Add(txt);
             txt.Top = cLeft * 35;
             txt.Left = 150;
-            txt.Text = "MESSAGE " + this.cLeft.ToString();
+            txt.Text = "Textbox " + this.number.ToString();
             cLeft = cLeft + 1;
+            number = number + 1;
             return txt;
         }
 
@@ -81,6 +84,10 @@ namespace Database_Tesing
 
         }
 
-
+        private void editBtn_Click(object sender, EventArgs e)
+        {
+            Edit edtForm = new Edit();
+            edtForm.Show();
+        }
     }
 }
