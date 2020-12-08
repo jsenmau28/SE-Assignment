@@ -56,21 +56,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interviewer\CreateFeedback.cs" />
-    <Compile Include="Interviewer\DBConnection.cs" />
-    <Compile Include="Interviewer\Interviewer_GUI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Interviewer\Interviewer_GUI.Designer.cs" />
-    <Compile Include="Interviewer\Program_Interviewer.cs" />
-    <Compile Include="Interviewer\sendFeedback.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Textbox1Handler.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Interviewer\Interviewer_GUI.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
